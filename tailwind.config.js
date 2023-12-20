@@ -1,0 +1,72 @@
+module.exports = {
+  mode: "jit",
+  content: [
+    "./src/**/**/*.{js,ts,jsx,tsx,html,mdx}",
+    "./src/**/*.{js,ts,jsx,tsx,html,mdx}",
+  ],
+  darkMode: "class",
+  theme: {
+    screens: { md: { max: "1050px" }, sm: { max: "550px" } },
+    extend: {
+      colors: {
+        white: {
+          A700_b2: "#ffffffb2",
+          A700_99: "#ffffff99",
+          A700_e5: "#ffffffe5",
+          A700_87: "#ffffff87",
+          A700_66: "#ffffff66",
+          A700_01: "#fdfdfd",
+          A700: "#ffffff",
+        },
+        deep_orange: { A200: "#ef6830" },
+        blue_gray: {
+          50: "#eff2f6",
+          700: "#525252",
+          900: "#18214d",
+          "50_01": "#f1f1f1",
+          "800_87": "#3e446287",
+          "700_01": "#524e55",
+        },
+        light_blue: { 400: "#18ade4" },
+        red: { 400: "#e7534e" },
+        gray: {
+          50: "#f8f8f8",
+          100: "#f7f7f7",
+          300: "#e7e6e7",
+          400: "#b3b3b3",
+          500: "#979797",
+          700: "#646464",
+          900: "#191919",
+          "500_01": "#909090",
+          "900_01": "#212426",
+          "300_01": "#dfe3ea",
+          "50_a2": "#f8f8f8a2",
+        },
+        black: {
+          900: "#110915",
+          "900_01": "#000000",
+          "900_03": "#060606",
+          "900_02": "#0e0e0e",
+          "900_2b": "#0000002b",
+          "900_a5": "#000000a5",
+        },
+        yellow: {
+          800: "#ef972c",
+          900: "#ef8f2d",
+          A700: "#edd103",
+          "900_01": "#f6851b",
+        },
+        purple: { 400: "#aa58aa", 800: "#6f348e" },
+        cyan: { 300: "#54d9e1", "800_99": "#0f739799" },
+        lime: { A700: "#b7e703" },
+      },
+      fontFamily: { inter: "Inter" },
+      boxShadow: { bs: "21px 24px  122px 0px #0000002b" },
+      backgroundImage: {
+        gradient:
+          "linear-gradient(180deg ,#000000,#000000a5,#0f739799,#18ade4)",
+      },
+    },
+  },
+  plugins: [require("@tailwindcss/forms")],
+};
